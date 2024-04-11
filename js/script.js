@@ -70,9 +70,9 @@ form.addEventListener('submit', (e) => {
 // DELETE EMPLOYEE
 
 employeeTable.addEventListener('click', (e) => {
-    if (e.target.tagName === 'BUTTON') { // If the clicked element is a button
-        const row = e.target.parentElement.parentElement; // Get the parent row
-        employeeTable.deleteRow(row.rowIndex); // Delete the row
-        employeeCount--; // Decrement the employee count
+    if (e.target.tagName === 'BUTTON') { 
+        const row = e.target.parentElement.parentElement; 
+        employeeTable.deleteRow(row.rowIndex); 
+        employeeCount--; 
     }
 });
